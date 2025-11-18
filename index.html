@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Explorer — Netflix Style</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="logo">Movie<span>Finder</span></h1>
+    <input type="text" id="searchInput" placeholder="Search movies..." />
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Explore Unlimited Movies</h2>
+      <p>Search. Discover. Enjoy.</p>
+    </div>
+  </section>
+
+  <main>
+    <h2 class="section-title">Results</h2>
+    <div id="movieContainer" class="grid"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <img id="modalPoster" />
+      <div class="modal-text">
+        <h2 id="modalTitle"></h2>
+        <p id="modalYear"></p>
+        <p id="modalPlot"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Built by 0xm7d </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
